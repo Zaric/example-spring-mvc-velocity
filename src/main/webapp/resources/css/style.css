@@ -1,0 +1,38 @@
+article {
+	max-width: 1200px;
+	min-width: 750px;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 0 0 15px #DCDCDC;
+	margin: 20px auto;
+	background-color: #DCDCDC;
+}
+
+header {
+	padding: 2em;
+	border-bottom: 1px solid black;
+}
+
+section {
+	background-color: white;
+	padding: 4em 2em;
+	line-height: 2em;
+}
+
+footer {
+	clear: both;
+	padding: 1em;
+	border-top: 1px solid black;
+}
+
+h1 {
+	font-size: 2em;
+	font-family: Serif;
+}
+
+header p,footer p {
+	font-size: 0.7em;
+	font-family: sans-serif;
+	text-align: right;
+	font-style: italic;
+}

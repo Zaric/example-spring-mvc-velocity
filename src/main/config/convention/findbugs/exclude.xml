@@ -1,0 +1,12 @@
+<FindBugsFilter>
+	<Match>
+		<Package name="~test\..*" />
+	</Match>
+	<Match>
+		<Package name="~target\..*" />
+	</Match>
+	<Match>
+		<Class name="~.*Spring.*Configuration.*" />
+		<Bug pattern="NP_UNWRITTEN_FIELD,UWF_UNWRITTEN_FIELD" />
+	</Match>
+</FindBugsFilter>

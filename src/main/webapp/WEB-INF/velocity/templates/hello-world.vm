@@ -1,0 +1,5 @@
+#set($page_title="#springMessage('HelloWorld')")
+
+#define($content)
+	#springMessage("HelloWorld")
+#end

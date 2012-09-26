@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+	<head>
+		<title>$!page_title</title>
+		<link href="#springUrl('/resources/css/reset.css')" rel="stylesheet" type="text/css" />
+		<link href="#springUrl('/resources/css/style.css')" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<article>
+			<header>#parse('/layout/header.vm')</header>
+			<section>$!content</section>
+			<footer>#parse('/layout/footer.vm')</footer>
+		</article>
+	</body>
+</html>
