@@ -3,9 +3,9 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.exacode.bootstrap</groupId>
-	<artifactId>spring-mvc-bootstrap</artifactId>
+	<artifactId>spring-mvc-velocity-bootstrap</artifactId>
 	<packaging>war</packaging>
-	<name>spring-mvc-bootstrap</name>
+	<name>spring-mvc-velocity-bootstrap</name>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
