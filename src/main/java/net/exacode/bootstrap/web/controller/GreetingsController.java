@@ -14,20 +14,21 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * Presents how to pass some values to controller using URL.
+ * 
  * @author pmendelski
- *
+ * 
  */
 @Controller
 public class GreetingsController {
 	private final Logger logger = LoggerFactory.getLogger(getClass());
-	
+
 	private final MessageProvider messageProvider;
-	
+
 	@Autowired
 	public GreetingsController(MessageProvider messageProvider) {
 		this.messageProvider = messageProvider;
 	}
-	
+
 	@RequestMapping(value = "/greet/{name}", method = RequestMethod.GET)
 	public String greetPath(@PathVariable String name, ModelMap model) {
 		logger.debug("Method greetPath");
@@ -35,9 +36,11 @@ public class GreetingsController {
 		model.addAttribute("greetings", messageProvider.getMessage("Greetings"));
 		return "greetings";
 	}
-	
+
 	@RequestMapping(value = "/greet", method = RequestMethod.GET)
-	public String greetRequest(@RequestParam(required = false, defaultValue = "John Doe") String name, ModelMap model) {
+	public String greetRequest(
+			@RequestParam(required = false, defaultValue = "John Doe") String name,
+			ModelMap model) {
 		logger.debug("Method greetRequest");
 		model.addAttribute("name", name);
 		model.addAttribute("greetings", messageProvider.getMessage("Greetings"));
