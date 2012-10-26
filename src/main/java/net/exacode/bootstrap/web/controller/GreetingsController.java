@@ -33,7 +33,6 @@ public class GreetingsController {
 			ModelMap model) {
 		logger.debug("Method greetRequest");
 		model.addAttribute("name", name);
-		model.addAttribute("greetings", messageProvider.getMessage("Greetings"));
 		return "greetings";
 	}
 }
