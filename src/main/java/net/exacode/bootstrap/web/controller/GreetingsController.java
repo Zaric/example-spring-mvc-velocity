@@ -1,7 +1,5 @@
 package net.exacode.bootstrap.web.controller;
 
-import net.exacode.bootstrap.web.utils.MessageProvider;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,18 +20,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class GreetingsController {
 	private final Logger logger = LoggerFactory.getLogger(getClass());
 
-	private final MessageProvider messageProvider;
-
-	@Autowired
-	public GreetingsController(MessageProvider messageProvider) {
-		this.messageProvider = messageProvider;
-	}
-
 	@RequestMapping(value = "/greet/{name}", method = RequestMethod.GET)
 	public String greetPath(@PathVariable String name, ModelMap model) {
 		logger.debug("Method greetPath");
 		model.addAttribute("name", name);
-		model.addAttribute("greetings", messageProvider.getMessage("Greetings"));
 		return "greetings";
 	}
 
