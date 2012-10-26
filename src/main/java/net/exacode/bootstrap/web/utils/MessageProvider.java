@@ -14,7 +14,6 @@ import org.springframework.stereotype.Component;
  * @author pmendelski
  * 
  */
-@SuppressWarnings("restriction")
 @Component
 public class MessageProvider {
 
