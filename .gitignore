@@ -5,3 +5,4 @@ target
 .fbprefs
 .pmd
 .project
+src/main/resources/rebel.xml
