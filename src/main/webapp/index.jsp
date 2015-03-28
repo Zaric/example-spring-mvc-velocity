@@ -2,6 +2,6 @@
 
 <html>
 <body>
-Hello world
+hello world
 </body>
 </html>
